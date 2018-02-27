@@ -35,11 +35,11 @@ public enum Planeta {
         return this.masa;
     }
    
-    public double gravedadSuperficie() {
+    private double gravedadSuperficie() {
         return G * getMasa() / (Math.pow(getRadio(), 2));
     }
 
-    public double tuMasa (Double pesoHumano) {
+    private double tuMasa (Double pesoHumano) {
         return pesoHumano / EARTH.gravedadSuperficie();
     }
 
